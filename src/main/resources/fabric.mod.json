@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "lampmod",
+	"version": "${version}",
+	"name": "Lamp Mod",
+	"description": "My first ever mod. Hope u like it :D\nWorked on it for a while honestly.",
+	"authors": [
+		"Lamp",
+		"Wah"
+	],
+	"contact": {
+		"homepage": "https://lamps-dev.dev",
+		"sources": "https://github.com/lamps-dev/lamp-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/lampmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lamp.lampmod.LampMod"
+		],
+		"fabric-datagen": [
+			"net.lamp.lampmod.LampModDataGenerator"
+		],
+		"client": [
+			"net.lamp.lampmod.LampModClient"
+		]
+	},
+	"mixins": [
+		"lampmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
