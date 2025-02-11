@@ -2,6 +2,7 @@ package net.lamp.lampmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.lamp.lampmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class LampMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
